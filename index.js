@@ -75,9 +75,8 @@ const transfer = async (account, receiver, amount) => {
 // get tx status
 async function getState(txHash, accountId) {
   const result = await provider.txStatus(txHash, accountId);
-    console.log("result: ", result);
+  console.log("result: ", result);
 }
-
 
 // createWallet();
 // connectToNear();
@@ -89,4 +88,4 @@ async function main() {
   getState(TxHash, accountId);
 }
 
-main()
+main();
